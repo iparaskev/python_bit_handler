@@ -34,3 +34,16 @@ class BitHandler():
         register_val &= mask
 
         return register_val | (value << shift)
+
+    def get_bits(self, register_val, num_bits, shift):
+        """Get specific bits from register
+        
+        Args:
+            register_val: The complete register value
+            num_bits: How many bits we want.
+            shift: The shift from the start.
+        """
+        
+        mask = ((1 << num_bits) - 1) << shift
+
+        return (register_val & mask) >> shift
