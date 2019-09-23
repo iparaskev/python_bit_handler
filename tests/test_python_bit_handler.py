@@ -5,7 +5,6 @@
 
 
 import unittest
-import ctypes
 from click.testing import CliRunner
 
 from python_bit_handler import BitHandler
