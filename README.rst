@@ -7,7 +7,6 @@ A small python module for handling bits in registers with hardware interfaces co
 
 
 * Free software: MIT license
-* Documentation: https://python-bit-handler.readthedocs.io.
 
 
 Features
