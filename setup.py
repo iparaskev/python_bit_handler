@@ -8,14 +8,11 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
 requirements = ['Click>=6.0', ]
 
-setup_requirements = [ ]
+setup_requirements = []
 
-test_requirements = [ ]
+test_requirements = []
 
 setup(
     author="Iasonas Paraskevopoulos",
@@ -33,7 +30,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="A small python module for handling bits in registers with hardware interfaces communication libraries.",
+    description="A small python module for handling bits in registers with "
+                "hardware interfaces communication libraries.",
     entry_points={
         'console_scripts': [
             'python_bit_handler=python_bit_handler.cli:main',
@@ -41,7 +39,7 @@ setup(
     },
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n',
     include_package_data=True,
     keywords='python_bit_handler',
     name='python_bit_handler',
