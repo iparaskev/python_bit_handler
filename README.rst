@@ -38,6 +38,13 @@ Features
     number = 0b10101100
     bits = handler.get_bits(number, bits=3, shift=1)
 
+- Make a number from two or more registers
+
+  .. code:: python
+    
+    data = [0b10010101, 0b00100111, 0b11010000]
+    number = handler.get_number(data, res=20, signed=True, rev=True)
+    
 Credits
 -------
 
